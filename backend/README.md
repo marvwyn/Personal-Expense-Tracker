@@ -39,6 +39,10 @@ domain / persistence / support` per feature).
    The API listens on `http://localhost:3000` by default. `GET /health`
    should return `{"status":"ok"}` once the database connection succeeds.
 
+   Interactive API docs (Swagger UI) are served at `/api/docs`; the raw
+   OpenAPI document is at `/api/docs-json`. Authenticate with the "Authorize"
+   button using a bearer token from `POST /auth/login`.
+
 ## Migrations
 
 Schema changes go through migrations, not `synchronize: true`. Both the
